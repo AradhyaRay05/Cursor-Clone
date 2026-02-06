@@ -1,0 +1,357 @@
+:root {
+  --color-accent: #14120b;
+  --color-accent-light: #1b1913;
+
+  --primary-text-color: #edecec;
+  --bg-button-white: #d7d6d5;
+  --color-gray: #b6b5b3;
+  /*  #EDECEC */
+  --font-size-small: 1.4rem;
+  --font-size-base: 1.6rem;
+
+  --fw-regular: 400;
+  --fw-md: 600;
+  --fw-bold: 700;
+
+  --spacing-sm: 0.8rem;
+  --spacing-md: 2rem;
+}
+@font-face {
+  font-family: 'cursorRegular';
+  src: url(../fonts/CursorGothic_Regular-s.p.a361088d.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'cursorBold';
+  src: url(../fonts/CursorGothic_Bold-s.p.95169710.woff2) format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: 'cursorRegular', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: var(--font-size-base); /* 16px */
+  color: var(--primary-text-color);
+  background-color: var(--color-accent);
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+ul {
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--color-gray);
+}
+.icon-size {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+a.text-secondary:hover {
+  color: #e07b3f !important;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  font-weight: var(--fw-md);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 1.2px;
+}
+.text-center {
+  text-align: center;
+}
+.lh-18 {
+  line-height: 1.8;
+}
+/* grid */
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.trunc {
+  display: inline-block;
+  max-width: 10rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* FLEX */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.gap-sm {
+  gap: 0.01rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-12 {
+  gap: 1.2rem;
+}
+.green-num {
+  color: #27ae60;
+}
+.red-num {
+  color: #eb5757;
+}
+.time {
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+.bg-light {
+  background-color: var(--color-accent-light);
+}
+.bg-dark {
+  background-color: #26241e !important;
+}
+.text-gray-light {
+  color: #807f7b;
+}
+.text-gray-dark {
+  color: #61605c !important;
+}
+
+.text-primary {
+  color: var(--primary-text-color);
+}
+.text-secondary {
+  color: #bf4105 !important;
+}
+.font-bold {
+  font-weight: 700;
+}
+.text-20 {
+  font-size: 2rem;
+}
+.text-sm {
+  font-size: 1.8rem;
+}
+.mb-sm {
+  margin-bottom: 0.4rem;
+}
+.text-lg {
+  font-size: 4.4rem;
+}
+.lh-sm {
+  line-height: 1.1;
+}
+.w-70 {
+  width: 70% !important;
+}
+.p-md {
+  padding: 6rem !important;
+}
+.text-2xl {
+  font-size: 8rem;
+}
+/* rounded border */
+.rounded-sm {
+  border-radius: 0.4rem;
+}
+.rounded-md {
+  border-radius: 0.8rem;
+}
+
+.box {
+  background-color: var(--color-accent-light);
+  padding: 0.8rem;
+  color: var(--primary-text-color);
+}
+.code-box {
+  background-color: var(--color-accent-light);
+  padding: 0.8rem;
+}
+.w-full {
+  width: 100%;
+}
+.bg-gray {
+  background-color: var(--color-accent-light);
+}
+.mb-12 {
+  margin-bottom: 1.2rem;
+}
+.mb-md {
+  margin-bottom: 6.2rem;
+}
+.letter-spacing-sm {
+  letter-spacing: 1.2px;
+}
+.textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}
+.list-disc {
+  list-style: disc;
+}
+.list-inside {
+  list-style-position: inside;
+}
+
+.code-snippet-box {
+  background-color: var(--color-accent-light);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  width: 100%;
+  flex: 1;
+  padding: 1.2rem 1.6rem;
+  overflow: hidden;
+  position: relative;
+  border-top: 0.5px solid #333;
+}
+.code-snippet-box pre {
+  margin: 0;
+}
+.code-snippet-box code {
+  display: block;
+  position: relative;
+  color: #cfcac2;
+}
+.code-snippet-box .line {
+  display: block;
+  white-space: pre;
+}
+.code-comment {
+  color: #6d6a63;
+  font-style: italic;
+}
+.code-keyword {
+  color: #8fd6c1;
+}
+.code-string {
+  color: #e5a7e0;
+}
+.code-func {
+  color: #f2b04c;
+}
+.code-namespace {
+  color: #c8b7ff;
+}
+.code-number {
+  color: #f8c762;
+}
+.code-operator {
+  color: #d6d6dd;
+}
+.tab {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--primary-text-color);
+  padding: 0.6rem 1.2rem;
+}
+.tab.tab--active {
+  background-color: #1b1913;
+  font-weight: var(--fw-md);
+}
+
+.code-box {
+  background-color: var(--color-accent-light);
+  padding: 1.2rem 1.6rem;
+  border-radius: 0;
+  overflow: hidden;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cfcac2;
+}
+.code-box pre {
+  margin: 0;
+}
+.code-box code {
+  display: block;
+  white-space: pre;
+}
+.code-box .line {
+  display: block;
+  white-space: pre;
+}
+
+/* Diff view styles */
+.code-diff {
+  background-color: var(--color-accent-light);
+  padding: 0;
+  border-radius: 0;
+  overflow: auto;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cfcac2;
+  flex: 1;
+}
+.code-diff pre {
+  margin: 0;
+  padding: 1.2rem 0;
+}
+.code-diff code {
+  display: block;
+  white-space: pre;
+}
+.code-diff .line {
+  display: block;
+  white-space: pre;
+  padding: 0 1.2rem;
+}
+.code-diff .line.diff-add {
+  background-color: rgba(46, 160, 67, 0.15);
+}
+.code-diff .line.diff-remove {
+  background-color: rgba(248, 81, 73, 0.15);
+}
+.diff-sign {
+  display: inline-block;
+  width: 1.6rem;
+  font-weight: bold;
+  user-select: none;
+}
+.diff-add .diff-sign {
+  color: #3fb950;
+}
+.diff-remove .diff-sign {
+  color: #f85149;
+}
