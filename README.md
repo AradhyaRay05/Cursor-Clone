@@ -72,5 +72,4 @@ Brand assets and logos were sourced from Cursor Brandfetch and the original webs
 - Clean, semantic HTML
 - Visual closeness to the reference design
 
----
 
